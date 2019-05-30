@@ -1,0 +1,59 @@
+{
+  "name": "vue-registrar",
+  "version": "1.0.0",
+  "description": "A simple package that dynamically registers your components and vuex modules",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node node_modules/eslint/bin/eslint.js . --fix",
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmirrezaNasiri/vue-registrar.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue.js",
+    "vuex",
+    "component",
+    "register",
+    "dynamic",
+    "nested",
+    "module",
+    "require",
+    "context"
+  ],
+  "author": "Amirreza Nasiri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmirrezaNasiri/vue-registrar/issues"
+  },
+  "homepage": "https://github.com/AmirrezaNasiri/vue-registrar#readme",
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0",
+    "lodash.upperfirst": "^4.3.1",
+    "node-dir": "^0.1.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@vue/cli-plugin-unit-jest": "^3.8.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.8.0",
+    "jest-transform-stub": "^2.0.0",
+    "vue": "2",
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "2"
+  }
+}
