@@ -54,7 +54,7 @@ Vue.use(componentRegistrar, {})   // You may pass some options too. See below.
 !> Don't import from `'vue-registrar'` itself. Always use `'vue-registrar/component-registrar'`.
 
 
-## Add your awesome components
+## Add your components
 
 Put everything you want inside the registrar's entry directory:
 ```

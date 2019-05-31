@@ -1,6 +1,17 @@
-# Vue Registrar
+<p align="center">
+  <a href="https://amirrezanasiri.github.io/vue-registrar/">
+    <img alt="vue-registrar" src="./assets/logo.png" width="150">
+  </a>
+  <h1 align="center">Vue Registrar</h1>
+</p>
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+<p align="center">
+  A dynamic component registrar and Vuex module assembler
+</p>
+
+<p align="center">
+</p>
+<br>
 
 A Vue.js package that makes your code a lot cleaner and much more understandable.
 

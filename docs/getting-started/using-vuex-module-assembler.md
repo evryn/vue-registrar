@@ -81,7 +81,7 @@ new Vue({
 
 ```
 
-## Add modules
+## Add your modules
 
 Put everything you want inside the assembler's entry directory:
 ```
