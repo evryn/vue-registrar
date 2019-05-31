@@ -6,5 +6,5 @@ yarn-error.log*
 
 .idea
 .vscode
-
+coverage
 *.tgz
