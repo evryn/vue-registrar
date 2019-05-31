@@ -2,7 +2,6 @@
   "name": "vue-registrar",
   "version": "1.0.0",
   "description": "A simple package that dynamically registers your components and vuex modules",
-  "main": "index.js",
   "scripts": {
     "lint": "node node_modules/eslint/bin/eslint.js . --fix",
     "test": "node node_modules/jest/bin/jest.js"
