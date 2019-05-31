@@ -3,3 +3,7 @@ node_js:
   - 11.1.0
 script:
   - npm run test
+deploy:
+  provider: npm
+  email: "hi@amirreza.in"
+  api_key: NPM_AUTH_TOKEN
