@@ -29,7 +29,7 @@ Vue Registrar is consisted of two modules that:
 No more words! see yourself:   
 
 ### Using Component Registrar
-![vue-dynamic-component-registrar](./assets/component-registrar-usage.png)
+![vue-dynamic-component-registrar](./docs/assets/component-registrar-usage.png)
 
 If you're familiar with following structure, you'll need it:
 ```vue
@@ -49,7 +49,7 @@ Because by using this, you just need to consider your template:
 ```
 
 ### Using Vuex Module Assembler
-![vuex-dynamic-nested-module-assembler](./assets/vuex-module-assembler-usage.png)
+![vuex-dynamic-nested-module-assembler](./docs/assets/vuex-module-assembler-usage.png)
 
 If you're using Vuex modules (especially in a nested or namespaced manner) like this, you'll need it:
 ```javascript
