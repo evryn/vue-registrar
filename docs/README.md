@@ -77,3 +77,13 @@ vuex-modules/
         ├── mutations.js
         └── state.js
 ```
+
+## Contribution
+Any kind of help is appreciated! Feel free to report bugs, extend functionality and features. Pull Requests will be reviewed as soon as possible.
+
+## License
+Code is licensed under the [MIT License](../LICENSE).
+
+# See Also
+* [ByteGate](https://bytegate.ir/) (our blog)
+* [تبدیل PDF به ورد](http://delix.ir/) (our sponsored service)
