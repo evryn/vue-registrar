@@ -24,11 +24,11 @@ A Vue.js package that makes your code a lot cleaner and much more understandable
 🔥 Let just <a href="https://amirrezanasiri.github.io/vue-registrar/#/getting-started/installation"><strong>get started!</strong></a>!
 
 ## What is this technically?
-Vue Registrar is consisted of two modules that:
- * Registers all common components globally and stops need for importing them manually;
+Vue Registrar is consisted of two features that:
+ * Registers all your common and frequently used components globally and ends the need for importing them manually;
  * Assembles all your vuex modules in a nested manner.   
  
- <a href="https://amirrezanasiri.github.io/vue-registrar/#/getting-started/installation"><strong>See Documents.</strong></a>
+👉 <a href="https://amirrezanasiri.github.io/vue-registrar/#/getting-started/installation"><strong>See documents and get started</strong></a>
  
 ## Why should I use it?
 No more words! see yourself:   
@@ -36,18 +36,18 @@ No more words! see yourself:
 ### Using Component Registrar
 ![vue-dynamic-component-registrar](./docs/assets/component-registrar-usage.png)
 
-If you're familiar with following structure, you'll need it:
+If you're familiar with following structure:
 ```vue
 // hello-world.vue
 <template> ... </template>
 <script>
-import Something from './path/to/it'
+import SomethingCommon from './path/to/it'
 export default {
-  components: { Something }
+  components: { SomethingCommon }
 }
 </script>
 ```
-Because by using this, you just need to consider your template:
+You may need this feature! By using that, you just need to consider your template:
 ```vue
 // hello-world.vue
 <template> ... </template>
@@ -56,7 +56,7 @@ Because by using this, you just need to consider your template:
 ### Using Vuex Module Assembler
 ![vuex-dynamic-nested-module-assembler](./docs/assets/vuex-module-assembler-usage.png)
 
-If you're using Vuex modules (especially in a nested or namespaced manner) like this, you'll need it:
+If you're using Vuex modules (especially in a nested or namespaced manner) like this:
 ```javascript
 // store.js
 import moduleAlphaState from './path/to/moduleAlpha/state'
@@ -75,7 +75,7 @@ export default {
 }
 </script>
 ```
-Because using this, you don't need to do that! just follow a directory structure!
+You'll need this feature. By using it, you don't need to do anything else! just follow a simple directory structure:
 ```
 vuex-modules/
 └── a

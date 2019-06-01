@@ -1,8 +1,8 @@
 # Common Problems
 
-This page covers most of the problems that may occur using the packages and of course their solutions.  
+This page covers most of problems that may occur using the packages and of course their solutions.  
 Most of the problems are cause because of wrong `DefinePlugin` usage.  
-So consider the following code inside `vue.config.js` file in your root as general solution; we'll talk why you're facing some errors or warnings:
+So consider the following code inside `vue.config.js` file in the root of your application as general solution; we'll talk why you're facing some errors or warnings:
 ```javascript
 // vue.config.js
 const webpack = require('webpack')
@@ -19,11 +19,11 @@ module.exports = {
   }
 }
 ```
-!> If the file `vue.config.js` doesn't exist in the root of project, simply create a file with that name. Vue should automatically consider that.
+?> If the file `vue.config.js` doesn't exist in the root of project, simply create a file with that name. Vue should automatically consider that.
 
 ## Webpack warning: Critical dependency
 
-If you face any warning in the output of your build like this:
+You may face following warnings in the output of your build::
 ```
 warning  in ./node_modules/vue-registrar/component-registrar/index.js
 Critical dependency: require function is used in a way in which dependencies cannot be statically extracted
@@ -37,16 +37,16 @@ Critical dependency: require function is used in a way in which dependencies can
 ### Causes:
 * Global constants are not defined:
 This means that one or both of global webpack constants are not defined. They are:
-* `VUE_REGISTRAR_COMPONENTS_DIR`: Required for component registrar feature
-* `VUE_REGISTRAR_VUEX_MODULES_DIR`: Required for vuex module assembler feature
+  * `VUE_REGISTRAR_COMPONENTS_DIR`: Required for component registrar feature
+  * `VUE_REGISTRAR_VUEX_MODULES_DIR`: Required for vuex module assembler feature
 
 * Global constants are not wapped by `JSON.stringify`:
-Without using `JSON.stringify` to specify their value, webpack will NOT replace constants their string values we are needed.  
+Without using `JSON.stringify` to specify their value, webpack will NOT replace constants with their string values as we expected.  
 It may even cause the builder to throw a `SyntaxError: Unexpected token` error too.
 
 
 ### Solution:
-+ Double check that you're defining whatever constraint required.
++ Double check that you're defining whatever constraint is required.
 + Make sure that you're wrapping the whole string inside `JSON.stringfy`.
 
 

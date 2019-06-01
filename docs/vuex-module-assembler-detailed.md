@@ -1,6 +1,6 @@
 # Vuex Module Assembler
 
-The assembler is a function that must be imported from 'vue-registrar/vuex-module-assembler'. The returned value is the assembled modules which is ready to be used inside a `Vuex.Store` instance.
+The assembler is a function that must be imported from 'vue-registrar/vuex-module-assembler'. The returned value is an object of assembled modules which is ready to be used inside a `Vuex.Store` instance.
 ```javascript
 import moduleAssembler from 'vue-registrar/vuex-module-assembler'
 const modules = moduleAssembler( /* optional options; see below. */ )
@@ -13,7 +13,7 @@ const store new Vuex.Store({
  */
 ```
 
-It'll basically create a namespaced module according to every root or nested directory name it faces in its given entry directory (by a global constant named `VUE_REGISTRAR_VUEX_MODULES_DIR`). After so, it'll try to find any `.js` file inside the directories and will register their contents as current module (current dir) body.
+It'll basically create a namespaced module according to nested directory names it faces in its given entry directory (by a global constant named `VUE_REGISTRAR_VUEX_MODULES_DIR`). After so, it'll try to find any `.js` file inside the directories and will register their contents as current module (current dir) body.
 
 ## Default naming rule
 As it's just been told, every directory will be a nested namespaced module of its parent directory and every `.js` file will be added to its body. Name of `.js` files will represent their key and their content will be the keys' value. For example:
@@ -53,11 +53,10 @@ return {
 }
 ```
 
-With following files:
 
 ## Options
 
-Component Registrar accepts following options:
+Vuex module assembler accepts following options:
 
 #### modules
 If you have predefined custom modules in any manner, pass it as destructive `modules` option. The assembler will extend it.

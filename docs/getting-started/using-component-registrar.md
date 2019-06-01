@@ -12,15 +12,15 @@ Consider a specific directory to put your common components there. For example:
 └── src
     ├── assets
     ├── vuex-modules
-    ├── components      <--- For example, put your components here.
+    ├── components      <--- For example, put your common components here.
     ├── plugins
     └── views
 ```
 
 In this example, `` `${__dirname}/src/components` `` will be the component registrar entry directory.
 
-Component registrar is going to use a global webpack related constant called `VUE_REGISTRAR_COMPONENTS_DIR` to specify it's entry path.  
-You'll need to define it using `DefinePlugin` webpack plugin in your `vue.config.js` in root of your project.  
+Component registrar is going to use a global webpack related constant named `VUE_REGISTRAR_COMPONENTS_DIR` to specify its entry path.  
+You'll need to define it using `DefinePlugin` webpack plugin in your `vue.config.js` in the root of your project.  
 
 ?> If you don't have `vue.config.js`, simply create it!
 
@@ -41,13 +41,13 @@ module.exports = {
 ```
 
 ### 2. Register module
-2- In your vue application's entry file (usually `src/main.js`), use the registrar:
+2- In your vue application entry file (usually `src/main.js`), use the registrar:
 ```javascript
 // src/main.js
 import Vue from 'vue'
 import componentRegistrar from 'vue-registrar/component-registrar'
 
-Vue.use(componentRegistrar, {})   // You may pass some options too. See below.
+Vue.use(componentRegistrar, {}) // See `Component Registrar Feature` section for available options.
 // ... rest of your main.js
 ```
 
@@ -56,7 +56,7 @@ Vue.use(componentRegistrar, {})   // You may pass some options too. See below.
 
 ## Add your components
 
-Put everything you want inside the registrar's entry directory:
+Put everything you want inside the entry directory of registrar:
 ```
 src/components
 ├── MainContainer.vue
@@ -70,6 +70,9 @@ src/components
 ```
 
 And use them wherever you want without registering any of them:
+
+?> See how component names are defined and change it if you need: [Component Registrar Feature](../component-registrar-detailed.md)
+
 ```vue
 <template>
   <main-container>
@@ -85,5 +88,3 @@ And use them wherever you want without registering any of them:
   </main-container>
 </template>
 ```
-
-?> See how component names are defined and change it if you need: [Component Registrar: Options]()

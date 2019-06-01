@@ -6,7 +6,7 @@ You're about to organize your vuex modules or make them nested as long as you wa
 
 ## Preparing Module
 ### 1. Define entry point
-Consider a specific directory to put your common components there. For example:
+Consider a specific directory to put your vuex modules there. For example:
 ```
 .       <--- Root of your project
 ├── dist
@@ -19,10 +19,10 @@ Consider a specific directory to put your common components there. For example:
     └── views
 ```
 
-In this example, `` `${__dirname}/src/vuex-modules` `` will be the vuex module assembler entry directory.
+In this example, `` `${__dirname}/src/vuex-modules` `` will be the entry directory of vuex module assembler.
 
-Vuex module assembler is going to use a global webpack related constant called `VUE_REGISTRAR_VUEX_MODULES_DIR` to specify it's entry path.  
-You'll need to define it using `DefinePlugin` webpack plugin in your `vue.config.js` in root of your project.  
+Vuex module assembler is going to use a global webpack related constant named `VUE_REGISTRAR_VUEX_MODULES_DIR` to specify its entry path.  
+You'll need to define it using `DefinePlugin` webpack plugin in your `vue.config.js` in the root of your project.  
 
 ?> If you don't have `vue.config.js`, simply create it!
 
@@ -42,7 +42,7 @@ module.exports = {
 }
 ```
 
-### 2. Register module
+### 2. Import assembler
 2- In your vue application's vuex store preparation file (usually `src/store.js`), use the assembler:
 ```javascript
 // src/store.js
@@ -50,14 +50,11 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import moduleAssembler from 'vue-registrar/vuex-module-assembler'
 
-const modules = moduleAssembler() // You can pass some options. See below.
+const modules = moduleAssembler() // See `Vuex Module Assembler` section for available options.
 Vue.use(Vuex)
 const store = new Vuex.Store({
-  actions,
-  getters,
+  // ...
   modules,
-  mutations,
-  state,
 })
 
 export default store
@@ -83,7 +80,7 @@ new Vue({
 
 ## Add your modules
 
-Put everything you want inside the assembler's entry directory:
+Put all of your vuex modules inside the entry directory of the assembler:
 ```
 src/vuex-modules
 ├── admin
@@ -105,7 +102,9 @@ src/vuex-modules
     └── state.js
 ```
 
-And use them:
+And use them:   
+
+?> See how module names and their properties are defined: [Vuex Module Assembler Feature](../vuex-module-assembler-detailed.md)
 ```vue
 <script>
 export default {
@@ -117,5 +116,3 @@ export default {
 }
 </script>
 ```
-
-?> See how module names and their properties are defined: [Vuex Module Assembler]()

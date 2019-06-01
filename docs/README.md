@@ -11,38 +11,38 @@
 
 <p align="center">
     <a href="https://www.npmjs.com/package/vue-registrar"><img src="https://img.shields.io/npm/dt/vue-registrar.svg"></a>
-        <a href="https://travis-ci.org/AmirrezaNasiri/vue-registrar"><img src="https://travis-ci.org/AmirrezaNasiri/vue-registrar.svg?branch=master"></a>
-        <img src="https://img.shields.io/david/AmirrezaNasiri/vue-registrar.svg">
-        <img src="https://img.shields.io/github/last-commit/AmirrezaNasiri/vue-registrar.svg">
-        <a href="https://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg"></a>
+    <a href="https://travis-ci.org/AmirrezaNasiri/vue-registrar"><img src="https://travis-ci.org/AmirrezaNasiri/vue-registrar.svg?branch=master"></a>
+    <img src="https://img.shields.io/david/AmirrezaNasiri/vue-registrar.svg">
+    <img src="https://img.shields.io/github/last-commit/AmirrezaNasiri/vue-registrar.svg">
+    <a href="https://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg"></a>
 </p>
 <br>
 
 A Vue.js package that makes your code a lot cleaner and much more understandable.
 
 ## What is this technically?
-Vue Registrar is consisted of two modules that:
- * Registers all common components globally and stops need for importing them manually;
+Vue Registrar is consisted of two features that:
+ * Registers all your common and frequently used components globally and ends the need for importing them manually;
  * Assembles all your vuex modules in a nested manner.   
  
 ## Why should I use it?
-No more words! see your self:   
+No more words! see yourself:   
 
 ### Using Component Registrar
 ![vue-dynamic-component-registrar](./assets/component-registrar-usage.png)
 
-If you're familiar with following structure, you'll need it:
+If you're familiar with following structure:
 ```vue
 // hello-world.vue
 <template> ... </template>
 <script>
-import Something from './path/to/it'
+import SomethingCommon from './path/to/it'
 export default {
-  components: { Something }
+  components: { SomethingCommon }
 }
 </script>
 ```
-Because using this, you just need to consider your template:
+You may need this feature! By using it, you just need to consider your template:
 ```vue
 // hello-world.vue
 <template> ... </template>
@@ -51,7 +51,7 @@ Because using this, you just need to consider your template:
 ### Using Vuex Module Assembler
 ![vuex-dynamic-nested-module-assembler](./assets/vuex-module-assembler-usage.png)
 
-If you're using Vuex modules (especially in a nested or namespaced manner) like this, you'll need it:
+If you're using Vuex modules (especially in a nested or namespaced manner) like this:
 ```javascript
 // store.js
 import moduleAlphaState from './path/to/moduleAlpha/state'
@@ -70,7 +70,7 @@ export default {
 }
 </script>
 ```
-Because using this, you don't need to do that! just follow a directory structure!
+You'll need this feature. By using it, you don't need to do anything else! just follow a simple directory structure:
 ```
 vuex-modules/
 └── a
