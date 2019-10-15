@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://amirrezanasiri.github.io/vue-registrar/">
+  <a href="https://evryn.github.io/vue-registrar/">
     <img alt="vue-registrar" src="./docs/assets/logo.png" width="150">
   </a>
   <h1 align="center">Vue Registrar</h1>
@@ -11,9 +11,9 @@
 
 <p align="center">
     <a href="https://www.npmjs.com/package/vue-registrar"><img src="https://img.shields.io/npm/dt/vue-registrar.svg"></a>
-    <a href="https://travis-ci.org/AmirrezaNasiri/vue-registrar"><img src="https://travis-ci.org/AmirrezaNasiri/vue-registrar.svg?branch=master"></a>
-    <img src="https://img.shields.io/david/AmirrezaNasiri/vue-registrar.svg">
-    <img src="https://img.shields.io/github/last-commit/AmirrezaNasiri/vue-registrar.svg">
+    <a href="https://travis-ci.org/evryn/vue-registrar"><img src="https://travis-ci.org/evryn/vue-registrar.svg?branch=master"></a>
+    <img src="https://img.shields.io/david/evryn/vue-registrar.svg">
+    <img src="https://img.shields.io/github/last-commit/evryn/vue-registrar.svg">
     <a href="https://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg"></a>
 </p>
 <br>
@@ -21,14 +21,14 @@
 A Vue.js package that makes your code a lot cleaner and much more understandable.
 
 ## Quick Start
-🔥 Let just <a href="https://amirrezanasiri.github.io/vue-registrar/#/getting-started/installation"><strong>get started!</strong></a>!
+🔥 Let just <a href="https://evryn.github.io/vue-registrar/#/getting-started/installation"><strong>get started!</strong></a>!
 
 ## What is this technically?
 Vue Registrar is consisted of two features that:
  * Registers all your common and frequently used components globally and ends the need for importing them manually;
  * Assembles all your vuex modules in a nested manner.   
  
-👉 <a href="https://amirrezanasiri.github.io/vue-registrar/#/getting-started/installation"><strong>See documents and get started</strong></a>
+👉 <a href="https://evryn.github.io/vue-registrar/#/getting-started/installation"><strong>See documents and get started</strong></a>
  
 ## Why should I use it?
 No more words! see yourself:   
