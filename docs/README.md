@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://amirrezanasiri.github.io/vue-registrar/">
+  <a href="https://evryn.github.io/vue-registrar/">
     <img alt="vue-registrar" src="./assets/logo.png" width="150">
   </a>
   <h1 align="center">Vue Registrar</h1>
@@ -11,9 +11,9 @@
 
 <p align="center">
     <a href="https://www.npmjs.com/package/vue-registrar"><img src="https://img.shields.io/npm/dt/vue-registrar.svg"></a>
-    <a href="https://travis-ci.org/AmirrezaNasiri/vue-registrar"><img src="https://travis-ci.org/AmirrezaNasiri/vue-registrar.svg?branch=master"></a>
-    <img src="https://img.shields.io/david/AmirrezaNasiri/vue-registrar.svg">
-    <img src="https://img.shields.io/github/last-commit/AmirrezaNasiri/vue-registrar.svg">
+    <a href="https://travis-ci.org/evryn/vue-registrar"><img src="https://travis-ci.org/evryn/vue-registrar.svg?branch=master"></a>
+    <img src="https://img.shields.io/david/evryn/vue-registrar.svg">
+    <img src="https://img.shields.io/github/last-commit/evryn/vue-registrar.svg">
     <a href="https://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg"></a>
 </p>
 <br>
